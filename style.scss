@@ -1,0 +1,157 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07.Tem.2014, 12:33:26
+    Author     : Alican
+*/
+
+body
+{
+    background:#ededed !important;
+    font-family: open sans !important;
+}
+.bp_ul_default
+{
+    margin: 0px;
+    padding: 0px;
+    display: table;
+
+    li {
+        list-style: none;
+        float: left;
+
+        a{
+            display: block;
+            text-decoration: none;
+        }
+    }
+}
+.bp_header_social
+{
+    float: right;
+}
+.bp_social_ico_dimensons
+{
+    width: 50px;
+    height: 40px;
+}
+#bp_donations_ico
+{
+    text-align: center;
+    width:125px;
+    height: 40px;
+    background: #80b900 url(inc/img/social-ico/donations.png) no-repeat -15px -5px;
+    color: white;
+    padding:10px;
+    font-size: 14px;
+}
+#bp_facebook_ico
+{
+    background: #5d82d1 url(inc/img/social-ico/facebook.png) no-repeat center center;
+}
+#bp_twitter_ico
+{
+    background: #40bff5 url(inc/img/social-ico/twitter.png) no-repeat center center;
+}
+#bp_youtube_ico
+{
+    background: #ef4e41 url(inc/img/social-ico/youtube.png) no-repeat center center;
+}
+#bp_mail_ico
+{
+    background: #f16500 url(inc/img/social-ico/mail.png) no-repeat center center;
+}
+#bp_head_tel
+{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5f5f5f;
+}
+#bp_logo
+{
+    position: relative;
+    img
+    {
+        position: absolute;
+    }
+    .logo
+    {
+        top: -25px;
+    }
+    .logo-text
+    {
+        top: 90px;
+        left: 155px;
+    }
+}
+.wrap
+{
+    height: 120px;
+    background: #ffffff;
+}
+@media screen and (max-width:768px)
+{
+    #bp_logo
+    {
+        margin-top: 10px;
+        text-align:center;
+        .logo
+        {
+            top:0px;
+            left: auto;
+            position: relative;
+        }
+        .logo-text
+        {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:480px)
+{
+    #bp_logo
+    {
+        .logo
+        {
+            top:-20px;
+            left: auto;
+            position: relative;
+        }
+    }
+    .wrap
+    {
+        margin-top: 10px;
+    }
+    #bp_head_tel
+    {
+        width: 100%;
+        text-align: center;
+    }
+    #bp_donations
+    {
+        width: 100%;
+        #bp_donations_ico
+        {
+            width: 100%;
+        }
+    }
+    #bp_facebook_ico, #bp_twitter_ico, #bp_youtube_ico,#bp_mail_ico
+    {
+        width: 50%;
+    }
+    .bp_social_ico_dimensons
+    {
+        width: 100%;
+    }
+    .bp_header_social
+    {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+
+}
