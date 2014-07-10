@@ -1,0 +1,70 @@
+/* SIFIRLAMA */
+ul,li
+{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+img
+{
+    border:0px;    
+}
+a
+{
+    text-decoration: none;    
+}
+
+/* SLİDER */
+#onceki,#sonraki{
+    color:White;
+    padding: 24px 20px;
+}
+#onceki
+{
+    background: #ad1c1c;
+
+}
+#sonraki
+{
+    background: #b41f1f;
+}
+#slider
+{
+    font-size: 22px;
+    color:white;
+    width: 800px;
+    height: 411.5px;
+    position: relative;
+    overflow: hidden;
+}
+#slider ul.slider li
+{
+    width: 800px;
+    height: 411.5px;
+    overflow: hidden;
+    float: left;
+}
+.sayfa
+{
+    position: absolute;
+    bottom: 00px;
+    right: 00px;
+}
+.sayfa_buton
+{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    background-color: #b41f1f;
+}
+#slider a:hover
+{
+    text-decoration: none;
+}
+@media screen and (max-width:1200px)
+{
+    #slider
+    {
+        display: none;
+    }
+}

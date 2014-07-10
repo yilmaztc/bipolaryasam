@@ -7,11 +7,9 @@ and open the template in the editor.
     Created on : 07.Tem.2014, 12:33:26
     Author     : Alican
 */
-
 body
 {
     background:#ededed !important;
-    font-family: open sans !important;
 }
 .bp_ul_default
 {
@@ -28,6 +26,10 @@ body
             text-decoration: none;
         }
     }
+}
+.bp_header
+{
+    position: relative;
 }
 .bp_header_social
 {
@@ -80,12 +82,13 @@ body
     }
     .logo
     {
-        top: -25px;
+        top: -40px;
+        left:-20px;
     }
     .logo-text
     {
         top: 90px;
-        left: 155px;
+        left: 135px;
     }
 }
 .wrap
@@ -93,8 +96,268 @@ body
     height: 120px;
     background: #ffffff;
 }
+.index-menu
+{
+    width: 330px;
+    float: left;
+}
+.bp_slider
+{
+    margin:20px;
+    width: 800px;
+    float: left;
+}
+/* Menü başlangıç */
+@mixin menu_li_hover(){
+    box-shadow: 0px white inset;
+}
+#header_menu
+{
+    position: absolute;
+    top: 76px;
+    right: 0;
+}
+#menu {
+
+    li.current-menu-item {
+        & > a {
+            border-bottom: 4px solid #b41f1f;
+            @include menu_li_hover();
+            .menu_hover_arrow {
+                display: block;
+            }
+        }
+    }
+    li {
+        position: relative;
+        a{
+            line-height: 10px;
+            padding: 15px 3px;
+            margin: 0px 10px;
+            color: #5d5d5d;
+            position: relative;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            &:hover {
+                @include menu_li_hover();
+            }
+            .menu_hover_arrow {
+                position: absolute;
+                border-color: transparent transparent transparent red;
+                border-width: 5px;
+                border-style: solid;
+                left: 0;
+                bottom: 5px;
+                display: none;
+            }
+        }
+        ul {
+            position: absolute;
+            padding: 0;
+            width: 200px;
+            top: 45px;
+            background: white;
+            z-index: 99995;
+            display: none;
+
+            li {
+                width: 100%;
+
+                a {
+                    padding:10.5px 10px !important;
+                    width: 100%;
+                    color:black;
+
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.ul-left,.ul-right {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    display: table;
+
+    li {
+        float: left;
+        list-style: none;
+
+        a {
+            float: left;
+        }
+    }
+}
+/* mobile menü */
+.mobile_menu_bar .glyphicon
+{
+    top:7px !important;
+    color:#b41f1f;
+}
+
+.mobile_menu{
+    background: white;
+    display: table;
+    width: 100%;
+}
+.mobile_menu {
+    visibility: hidden;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    overflow: scroll;
+}
+.mobile_menu_ul {
+    width: 100%;
+    background: #b41f1f;
+
+    li {
+        width: 100%;
+
+        a {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            border-bottom: thin solid white;
+        }
+    }
+}
+.mobile_menu_bar {
+    width: 100%;
+    p {
+        margin: 0;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+/* anasayfa başlangıç */
+
+.index-menu
+{
+    padding: 0px !important;
+}
+#menu_index
+{
+    margin-top: 20px;
+    padding:0px;
+    li
+    {
+        padding: 30px;
+        background: #ffffff;
+        margin: 3px 0px;
+        list-style: none;
+        a{
+            color:#474747;
+            font-size: 16px;
+            font-weight:bold;
+        }
+        a:hover{
+            text-decoration: none;
+            color:#b41f1f;
+        }
+    }
+}
+
+
+/* footer başlangıç  */
+.footer_in
+{
+    padding: 0px !important;
+}
+.bp_footer_about, .bp_footer_contact,.bp_footer_mail
+{
+    padding: 0px !important;
+}
+#footer-wrap
+{
+    margin-top: 300px;
+    width: 100%;
+    background: url(inc/img/bp_footer.jpg) repeat-x;
+    background-color: #ffffff;
+    h4
+    {
+        font-size: 18px;
+        font-weight:600;
+        color:#b41f1f;
+        padding: 8px 0px;
+    }
+    p,figure
+    {
+        padding: 20px 5px 20px 0px;;
+    }
+}
+.footer_wrap_head
+{
+    background: #f6f6f6;
+    width: 100%;
+    height: 60px;
+}
+.footer_bottom
+{
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 0px;
+    background: #f6f6f6;
+    p
+    {
+        padding: 0px;
+        float: left;
+        color:#8d8d8d;
+        font-size: 16px;
+    }
+    figure
+    {
+        float: right;
+        text-align: right;
+    }
+}
+@media screen and (max-width:1200px)
+{
+    #menu_index
+    {
+        display:none;
+    }
+}
+@media screen and (max-width:992px)
+{ 
+
+    #menu
+    {
+        display: none;
+    }
+    .deneme
+    {
+        width: 100%;
+        height: 38px;
+        background: white;
+    }
+    .mobile_menu
+    {
+        visibility:visible;
+        display: block !important;
+        overflow:hidden;
+        position: fixed;
+    }
+    #footer-wrap h4
+    {
+        background: url(inc/img/bp_footer.jpg) repeat-x;
+        padding: 10px;
+
+    }
+    #footer-wrap p, #footer-wrap figure
+    {
+        padding: 10px;
+    }
+}
 @media screen and (max-width:768px)
 {
+
     #bp_logo
     {
         margin-top: 10px;

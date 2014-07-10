@@ -12,6 +12,20 @@
 </head>
 <body <?php body_class(); ?>>
     <header>
+        <div class="deneme">
+            <div class="mobile_menu">
+
+                <?php
+                if (function_exists("nav_menu_ms")) {
+                    $mobile_menu_args = array("top-menu", false, "ul-right mobile_menu_ul", "");
+                    nav_menu_ms($mobile_menu_args);
+                }
+                ?>
+                <div class="mobile_menu_bar left">
+                    <p class="left"><span class="right glyphicon glyphicon-align-justify"></span></p>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <ul class="bp_header_social bp_ul_default">
                 <li id="bp_head_tel">Tel: 0555 555 55 55</li>
@@ -23,12 +37,12 @@
             </ul>
         </div>
         <div class="wrap">
-            <div class="container">
+            <div class="container bp_header">
                 <figure id="bp_logo">
                     <img class="logo" src="<?php echo get_bloginfo("template_url") ?>/inc/img/logo.png"/>
                     <img class="logo-text" src="<?php echo get_bloginfo("template_url") ?>/inc/img/logo-text.png"/>
                 </figure>
-                <nav class="col-lg-12" id="header_flexible">
+                <nav class="col-lg-9" id="header_menu">
                     <?php
                     if (function_exists("nav_menu_ms")) {
                         $top_menu_args = array("top-menu", false, "ul-left", "menu");
