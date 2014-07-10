@@ -19,5 +19,6 @@ wp_enqueue_style("slider", get_stylesheet_directory_uri() . "/inc/slider/style.c
     <div class="sayfa_buton">
         <a href="#" class="glyphicon glyphicon-chevron-left" id="onceki"></a>
         <a href="#" class="glyphicon glyphicon-chevron-right" id="sonraki"></a>
+        <figure class="slider-figure"></figure>
     </div>
 </div>
