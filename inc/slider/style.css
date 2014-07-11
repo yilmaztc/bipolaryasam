@@ -15,9 +15,11 @@ a
 }
 
 /* SLİDER */
-#onceki,#sonraki{
+#onceki,#sonraki,.slider-figure{
+    top: -65px;
+    position: absolute;
     color:White;
-    padding: 24px 20px;
+    padding: 22.5px 20px;
 }
 #onceki
 {
@@ -27,6 +29,13 @@ a
 #sonraki
 {
     background: #b41f1f;
+    left:62px;
+}
+.slider-figure
+{
+    height: 70px;
+    left:124px;
+    background: url(figure.png);
 }
 #slider
 {
@@ -44,6 +53,11 @@ a
     overflow: hidden;
     float: left;
 }
+.slider img
+{
+    width: 800px;
+    height: 411px;
+}
 .sayfa
 {
     position: absolute;
@@ -55,11 +69,23 @@ a
     position: absolute;
     bottom: 0px;
     left:0px;
-    background-color: #b41f1f;
 }
 #slider a:hover
 {
     text-decoration: none;
+}
+.slider-title
+{
+    width: 100%;
+    position: relative;
+    background: #3c4f54;
+    padding: 1px 165px;
+    left: 0px;
+    bottom: 50px;
+}
+.slider-title h3
+{
+    margin: 15px 5px !important;
 }
 
 @media screen and (max-width:1200px)

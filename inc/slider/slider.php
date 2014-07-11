@@ -9,8 +9,11 @@ wp_enqueue_style("slider", get_stylesheet_directory_uri() . "/inc/slider/style.c
             ?>
             <li>
                 <a href="#">
-                    <img src="<?php echo get_stylesheet_directory_uri()?>/inc/img/slider.jpg" alt=""/>
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/inc/img/slider.jpg" alt=""/>
                 </a>
+                <article class="slider-title">
+                    <h3>Örnek Haber Başlığı <?php echo $i ?></h3>
+                </article>
             </li>
             <?php
         }
