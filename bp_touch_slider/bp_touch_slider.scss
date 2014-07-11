@@ -1,0 +1,77 @@
+$bp_buttons_color : #b41f1f;
+$bp_buttons_hover : #3d4f54;
+#bp_content_slider {
+  overflow: hidden;
+}
+.bp_content_slider {
+  position: relative;
+
+  li {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .slider_title {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 10px 0px 10px 170px;
+    background: rgba(60,79,85,0.7);
+    color: white;
+
+  }
+}
+.bipolar_rl_button {
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+
+  a {
+      padding: 23px;
+    background: $bp_buttons_color;
+    float: left;
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+      color: $bp_buttons_hover;
+    }
+  }
+}
+#previous_cs {
+
+}
+#after_cs {
+
+}
+#slider_figure {
+  float: left;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent $bp_buttons_color $bp_buttons_color;
+  border-width: 30px;
+  border-style: solid;
+  margin-top: 1px;
+}
+@media screen and (max-width: 768px) {
+
+  .bipolar_rl_button {
+    display: none;
+  }
+  .slider_title {
+    font-size: 16px;
+    padding: 10px!important;
+
+    h4 {
+      margin: 0;
+    }
+  }
+
+}

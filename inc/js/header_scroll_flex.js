@@ -1,7 +1,7 @@
 var windowsize;
 var animate_speed = 150;
 
-$(document).ready(function() {
+jQuery(document).ready(function($) {
     var scrollTop = $(".top_header_wrap").height();
 //    var mobilscrollTop = $("#header_relative").height();
     windowsize = $(window).width();
@@ -33,6 +33,6 @@ $(document).ready(function() {
 
 });
 
-$(window).resize(function() {
+jQuery(window).resize(function() {
     windowsize = $(window).width();
 })

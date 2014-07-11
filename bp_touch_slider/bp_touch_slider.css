@@ -1,0 +1,51 @@
+#bp_content_slider {
+  overflow: hidden; }
+
+.bp_content_slider {
+  position: relative; }
+  .bp_content_slider li {
+    position: relative; }
+    .bp_content_slider li img {
+      width: 100%;
+      height: auto; }
+  .bp_content_slider .slider_title {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 10px 0px 10px 170px;
+    background: rgba(60, 79, 85, 0.7);
+    color: white; }
+
+.bipolar_rl_button {
+  position: absolute;
+  left: 15px;
+  bottom: 0px; }
+  .bipolar_rl_button a {
+    padding: 23px;
+    background: #b41f1f;
+    float: left;
+    color: white; }
+    .bipolar_rl_button a:hover {
+      text-decoration: none;
+      color: #3d4f54; }
+
+#slider_figure {
+  float: left;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent #b41f1f #b41f1f;
+  border-width: 30px;
+  border-style: solid;
+  margin-top: 1px; }
+
+@media screen and (max-width: 768px) {
+  .bipolar_rl_button {
+    display: none; }
+
+  .slider_title {
+    font-size: 16px;
+    padding: 10px !important; }
+    .slider_title h4 {
+      margin: 0; } }

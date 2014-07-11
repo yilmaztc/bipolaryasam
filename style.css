@@ -239,10 +239,14 @@ body {
     float: right;
     text-align: right; }
 
-@media screen and (max-width: 1200px) {
-  #menu_index {
-    display: none; } }
+.bp_slider_content {
+  margin-top: 30px; }
+
 @media screen and (max-width: 992px) {
+  #menu_index {
+    width: 100%;
+    text-align: center; }
+
   #menu {
     display: none; }
 
