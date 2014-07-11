@@ -1,3 +1,13 @@
+var biposliderclass = {
+    bp_right: function(){
+
+    },
+    bp_left : function(){}
+}
+
+
+
+
 $(function() {
     $(".sayfa a:first").addClass("aktif");
     $("ul.slider li:first").show();
