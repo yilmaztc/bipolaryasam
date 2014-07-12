@@ -252,6 +252,7 @@ body {
 }
 
 .index_contact {
+  display: table;
   padding-left: 0px !important;
 }
 .index_contact h3 {
@@ -313,7 +314,7 @@ body {
 }
 
 #submit_form_button {
-  width: 40% !important;
+  width: 45% !important;
   float: right;
   background: #B41F1F !important;
   color: white;
