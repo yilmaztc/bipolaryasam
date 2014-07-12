@@ -1,6 +1,7 @@
 <?php
     add_action("init","BpSliderScript");
     function BpSliderScript(){
+        if(is_admin()) return;
         wp_enqueue_script( "bp_touch_slider_script", get_template_directory_uri() . '/bp_touch_slider/bp_touch_slider.js', array("jquery") );
         wp_enqueue_style( "bp_touch_slider_style", get_stylesheet_directory_uri() . "/bp_touch_slider/bp_touch_slider.css" );
 

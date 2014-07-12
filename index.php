@@ -24,11 +24,13 @@ get_header();
             <span class="index_ucgen"></span>
             <span class="index_cizgi"></span>
             <?php
-            main_form_area(array(
-                'display' => false,
-                'address' => true,
-                'maps' => false
-            ))
+                if( function_exists( "main_form_area" ) ){
+                    main_form_area(array(
+                        'display' => false,
+                        'address' => true,
+                        'maps' => false
+                    ));
+                }
             ?>
         </div>
         <ul class="col-lg-3 col-md-3 index_list">
