@@ -28,7 +28,7 @@
     </div>
     <div class="container">
         <ul class="bp_header_social bp_ul_default">
-            <li id="bp_head_tel"><?php set_parameters( "customer_telephone_number_one" ); ?></li>
+            <li id="bp_head_tel"><?php echo set_parameters( "customer_telephone_number_one" ); ?></li>
             <li id="bp_donations"><a id="bp_donations_ico" href="javascript:void(0)" title="facebook">BAĞIŞLARINIZ</a>
             </li>
             <li id="bp_facebook_ico"><a class="bp_social_ico_dimensons"

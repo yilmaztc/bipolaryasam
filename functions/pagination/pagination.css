@@ -1,0 +1,21 @@
+.pagination {
+    float: left;
+    width: 100%;
+}
+#current {
+    background: white;
+    color: #252525;
+}
+.pages_page {
+    padding: 10px;
+    color: white;
+    background: #2980b9;
+}
+.pages_page:hover {
+    text-decoration: none;
+    background: #35e8e8;
+    color: white;
+}
+.pages_page:nth-child(n+2) {
+    margin-left: 5px;
+}

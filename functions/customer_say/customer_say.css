@@ -1,0 +1,66 @@
+#customer_say_title {
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    background: #2980b9;
+    text-align: center;
+}
+#customer_say_title a {
+    color: white;
+    text-decoration: none;
+}
+#customer_say_title a:hover {
+    text-decoration: underline;
+}
+.customer_say_ul_page,
+.customer_say_ul {
+    background: white;
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+}
+.customer_say_ul li {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 90%;
+}
+.customer_say_ul_page {
+    padding: 0;
+}
+.customer_say_ul_page li {
+    width: 100%;
+    list-style: none;
+}
+.customer_say_ul_page li {
+    padding: 10px 0;
+    border-bottom: thin solid #f4f4f4;
+}
+.customer_say_ul li article {
+    min-height: 80px;
+}
+.customer_say_ul_page li  span,
+.customer_say_ul li span {
+    width: 100%;
+    text-align: right;
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#customer_say_admin_form {
+    width: 640px;
+    float: left;
+}
+#customer_say_admin_form input[type="text"] {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+}
+#customer_say_admin_form textarea {
+    float:left;
+    width: 100%;
+    margin: 10px 0;
+}
+#customer_say_admin_form input[type="submit"] {
+    float: right;
+}
