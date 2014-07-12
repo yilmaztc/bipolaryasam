@@ -20,7 +20,7 @@
         </div>
     </div>
 </footer>
-<div class="footer_bottom">
+<div class="footer_bottom2">
     <div class="container footer_bottom_in">
             <p class="row bp_footer_copright">copyright all rights reserved 2014 | Bipolar Yaşam Derneği</p>
             <figure class="row bp_footer_medyasef"><img class="img-responsive" src="<?php echo get_bloginfo("template_url") ?>/inc/img/medyaseflogo.png" /></figure>
