@@ -18,7 +18,7 @@
         wp_enqueue_script( 'sub-menu', get_template_directory_uri() . '/inc/js/menu_dropdown.js', array( "jquery" ) );
         wp_enqueue_script( 'dropdown-menu', get_template_directory_uri() . '/inc/js/header_scroll_flex.js', array( "jquery" ) );
         //Touchswipe
-        wp_enqueue_script("touchswipe", "http://labs.skinkers.com/content/touchSwipe/jquery.touchSwipe.min.js",array("jquery") );
+        wp_enqueue_script( "touchswipe", "http://labs.skinkers.com/content/touchSwipe/jquery.touchSwipe.min.js", array( "jquery" ) );
     }
 
     /*
@@ -31,6 +31,9 @@
         return get_bloginfo( "template_url" ) . "/timthumb.php?src=" . $imagepath . "&w=" . $width . "&h=" . $height . "&zc=" . $zc;
 
     }
+
     require_once( __DIR__ . "/bp_touch_slider/bp_touch_slider.php" );
-    include_once ( __DIR__ . "/functions/main_videos/main_videos.php" );
+    require_once( __DIR__ . "/functions/main_videos/main_videos.php" );
+    require_once( __DIR__ . "/functions/customer_say/index.php" );
+    require_once( __DIR__ . "/functions/pagination/pagination.php" );
 ?>
