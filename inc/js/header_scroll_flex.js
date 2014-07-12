@@ -34,5 +34,5 @@ jQuery(document).ready(function($) {
 });
 
 jQuery(window).resize(function($) {
-    windowsize = $(window).width();
+    windowsize = jQuery(window).width();
 })

@@ -312,6 +312,30 @@ body {
 .bp_slider_content {
   margin-top: 30px; }
 
+#member_bul_title {
+  float: left; }
+
+#member_div {
+  float: right;
+  width: 65%; }
+  #member_div #emailaddress {
+    width: 65% !important;
+    float: left; }
+  #member_div #submit_form_button {
+    width: 30% !important;
+    float: right;
+    margin-top: 0 !important; }
+  #member_div #question_result {
+    display: none; }
+  #member_div #mail_register_area {
+    margin: 7px 0;
+    position: relative; }
+  #member_div #question_result {
+    padding: 0 !important;
+    position: absolute;
+    bottom: -30px;
+    left: 15px; }
+
 @media screen and (max-width: 1200px) {
   .index_list li {
     height: 117px; }
