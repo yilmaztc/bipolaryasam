@@ -33,6 +33,6 @@ jQuery(document).ready(function($) {
 
 });
 
-jQuery(window).resize(function() {
+jQuery(window).resize(function($) {
     windowsize = $(window).width();
 })
