@@ -33,7 +33,7 @@
                                 <?php thimtumb_rev( 750, 422 ); ?>
                             </a>
                             <article class="slider_title">
-                                <h4><?php the_title(); ?></h4>
+                                <h4><?php the_title();   ?></h4>
                             </article>
                         </li>
                     <?php
@@ -79,19 +79,22 @@
         <fieldset>
             <label for="bipo_checkbox_id">Choose the checkbox if you want that post viewed slider</label>
             <input id="bipo_checkbox_id" type="checkbox" name="bipo_checkbox_id" <?php echo " " . $checked; ?> />
+            <input type="hidden" name="bipo_checkbox_hidden"  />
         </fieldset>
     <?php } ?>
 <?php
     function BipoSliderSavePost()
     {
         global $post;
-        if ( isset( $_POST["bipo_checkbox_id"] ) ):
-            update_post_meta( $post->ID, "bipo_save_post_state", 1 );
+            if ( isset( $_POST["bipo_checkbox_hidden"] ) ){
+                if( $_POST["bipo_checkbox_id"] ){
+                    update_post_meta( $post->ID, "bipo_save_post_state", 1 );
+                } else {
+                    update_post_meta( $post->ID, "bipo_save_post_state", 0 );
+                }
 
-        else :
-            update_post_meta( $post->ID, "bipo_save_post_state", 0 );
+            }
 
-        endif;
     }
 
 ?>
