@@ -32,9 +32,9 @@ get_header();
             ?>
         </div>
         <ul class="col-lg-3 col-md-3 index_list">
-            <li class="index_list_h"><span>Sizin Hikayeleriniz</span></li>
-            <li class="index_list_u"><span>Uzmanlar Ne diyor?</span></li>
-            <li class="index_list_d"><span>Dernek ve Gönüllülük</span></li>
+            <li class="index_list_h col-lg-12"><span>Sizin Hikayeleriniz</span></li>
+            <li class="index_list_u col-lg-12"><span>Uzmanlar Ne diyor?</span></li>
+            <li class="index_list_d col-lg-12"><span>Dernek ve Gönüllülük</span></li>
         </ul>
     </div>
 </div>
