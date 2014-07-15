@@ -10,7 +10,6 @@ and open the template in the editor.
 body {
     background: #ededed !important;
 }
-
 .bp_ul_default {
     margin: 0px;
     padding: 0px;
@@ -391,11 +390,54 @@ body {
     background: white;
     padding:10px 30px 30px 30px;
 }
+/* category başlangıç */
+.content-inner
+{
+    clear:both;
+}
+.category_page
+{
+    position: relative;
+    height: 200px;
+    padding: 20px;
+    background: white;
+    width: 100%;
+    border-bottom: 2px solid #b41f1f;
+}
+.blog_post_image
+{
+    float:left;
+}
+.category_article
+{
+    margin: 0px 15px;
+    width: 50%;
+    float:left;
+    .read_more_class{
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        padding: 10px 20px;
+        background: #b41f1f;
+        color: white;
+        font-weight: bolder;
+    }
+    h3
+    {
+        margin: 0px !important;
+        display: table;
+    }
+}
+/* category bitiş */
 /* footer başlangıç  */
 .footer_in {
     padding: 0px !important;
 }
-
+.bp_footer_about 
+{
+    p{width: 90%;}
+    
+}
 .bp_footer_about, .bp_footer_contact, .bp_footer_mail {
     padding: 0px !important;
 }
@@ -442,34 +484,34 @@ body {
     margin-top: 30px;
 }
 #member_bul_title {
-  float: left;
+    float: left;
 }
 #member_div {
-  float: right;
-  width: 65%;
-
-  #emailaddress {
-    width: 65%!important;
-    float: left;
-  }
-  #submit_form_button {
-    width: 30%!important;
     float: right;
-    margin-top: 0!important;
-  }
-  #question_result {
-    display: none;
-  }
-  #mail_register_area {
-    margin: 7px 0;
-    position: relative;
-  }
-  #question_result {
-    padding: 0!important;
-    position: absolute;
-    bottom: -30px;
-    left: 15px;
-  }
+    width: 65%;
+
+    #emailaddress {
+        width: 65%!important;
+        float: left;
+    }
+    #submit_form_button {
+        width: 30%!important;
+        float: right;
+        margin-top: 0!important;
+    }
+    #question_result {
+        display: none;
+    }
+    #mail_register_area {
+        margin: 7px 0;
+        position: relative;
+    }
+    #question_result {
+        padding: 0!important;
+        position: absolute;
+        bottom: -30px;
+        left: 15px;
+    }
 }
 @media screen and (max-width: 1200px) {
     .index_list {
@@ -530,7 +572,7 @@ body {
     .wrap{
         margin-bottom: 50px;
     }
-    
+
     .index_list {
         li {
             width: 100%;
@@ -544,7 +586,7 @@ body {
             }
         }
     }
-    
+
     #bp_logo {
         margin-top: 10px;
         text-align: center;
