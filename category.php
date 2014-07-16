@@ -25,7 +25,7 @@
                                 <a href="<?php the_permalink(); ?>">
                                     <h3 class="blog_post_title"><?php the_title(); ?></h3>
                                 </a>
-                                <?php echo wp_trim_words(get_the_content(), 30); ?>
+                                <?php echo wp_trim_words(get_the_excerpt(), 30); ?>
                             </article>
 
                             <a class="read_more_class" href="<?php the_permalink(); ?>">Devamını Oku</a>
